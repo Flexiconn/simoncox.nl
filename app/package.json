@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "babel": "^6.23.0",
     "babel-plugin-prismjs": "^2.1.0",
+    "country-flag-icons": "^1.5.5",
     "devicon-react-svg": "^0.2.3",
     "prismjs": "^1.28.0",
     "programming-languages-logos": "^0.0.3",
@@ -17,6 +18,7 @@
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "react-typing-effect": "^2.0.5",
+    "recharts": "^2.1.12",
     "social-media-icons-react": "^1.1.10",
     "web-vitals": "^2.1.4"
   },
