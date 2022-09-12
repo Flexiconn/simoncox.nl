@@ -9,6 +9,7 @@ import { NL, GB } from 'country-flag-icons/react/3x2'
 import BioImage from "./img/BioImage.png"
 import { Bar, CartesianGrid,XAxis, YAxis, BarChart, Legend, Tooltip } from 'recharts';
 import ProjectCard from './ProjectCard';
+import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 
 function App() {
 
@@ -44,11 +45,12 @@ function App() {
           <a href="" className="Archive">View Archive</a>
         </div>
         <div className="Contact">
+
           <h1>Get in touch</h1>
           <p>Feel free to reach out preferably through email</p>
-          <div className="Card">Mail</div>
-          <div className="Card">LinkedIn</div>
-          <div className="Card">Github</div>
+          <div className="Card"><FaEnvelope style={{ fontSize: '20px'}}/><span>Mail</span></div>
+          <div className="Card"><FaLinkedinIn style={{ fontSize: '20px'}}/><span>LinkedIn</span></div>
+          <div className="Card"><FaGithub style={{ fontSize: '20px'}}/><span>Github</span></div>
         </div>
       </div>
       <div className="Footer"><a href="https://github.com/Flexiconn/simoncox.nl">View Source</a></div>
@@ -57,3 +59,4 @@ function App() {
 }
 
 export default App;
+

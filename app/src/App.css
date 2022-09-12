@@ -9,7 +9,7 @@
 .Nav{
   align-items: center;
   background: #fff;
-  border-bottom: 2px solid #f4f4f4;
+  border-bottom: 2px solid #F4F4F4;
   display: flex;
   height: 90px;
   justify-content: space-between;
@@ -27,11 +27,12 @@
 .Page > .Bio{
   background-color: #fff;
   height: 600px;
-  width: 100%;
+  max-width: 100%;
+  padding: 0 160px;
 }
 
 .Bio > .Panel {
-    background-color: #F5F4FC;
+    background-color: #F4F4F4;
     border-radius: 10px;
     padding: 40px;
     width: 50%;
@@ -40,7 +41,7 @@
 }
 
 .Page > .Projects{
-    background-color: #F5F4FC;
+    background-color: #F4F4F4;
     max-width: 100%;
     padding: 100px 160px;
   }
@@ -67,14 +68,31 @@
 
 .Contact > .Card {
     border-radius: 10px;
-    padding: 40px;
-    background-color: #F5F4FC;
+    padding: 15px;
+    width: 10%;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: flex-start;
     margin: 10px;
     transition: background-color 0.2s ease-out;
 }
 
 .Contact > .Card:hover {
     background-color: #F4796B;
+
+}
+
+.Contact > .Card > span {
+    padding-left: 10px;
+}
+
+.Contact > .Card:hover > span {
+    color: #fff;
+
+}
+
+.Contact > .Card:hover > svg {
+    color: #fff;
 
 }
 
