@@ -6,6 +6,13 @@
   background-color: #fff;
 }
 
+.waves{
+    width: 100vw;
+    left: 0px;
+    top: 10px;
+    position: absolute;
+}
+
 .Nav{
   align-items: center;
   background: #fff;
@@ -18,6 +25,22 @@
   top: 0;
   width: 100%;
   z-index: 1;
+  transition: background-color 0.2s ease-out, border-bottom 0.2s ease-out;
+}
+
+.Nav-NonScroll{
+  align-items: center;
+  background: #F4796B;
+  border-bottom: 2px solid #F4796B;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  padding: 0 48px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: background-color 0.2s ease-out, border-bottom 0.2s ease-out;
 }
 
 .Page{

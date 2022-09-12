@@ -1,10 +1,19 @@
 import logo from './img/Logo.svg';
 import './App.css';
-import { Bar, CartesianGrid,XAxis, YAxis, BarChart, Legend, Tooltip } from 'recharts';
+import wave from "./img/wave.svg"
 import ProjectCard from './ProjectCard';
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
+import React, { useRef, useEffect, useState } from "react"
 
 function App() {
+
+  const [offset, setOffset] = useState(0);
+  useEffect(() => {
+      const onScroll = () => setOffset(window.pageYOffset);
+      window.removeEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   function GetAge(){
     var birth = new Date('8/01/2003');
@@ -17,12 +26,16 @@ function App() {
   
     return Math.floor(ageInDays / 365 );
   }
+
+  console.log(offset);
+
   
   return (
     <div className="App">
-      <div className="Nav"></div>
+      <div className={(offset > 40) ? "Nav" : "Nav-NonScroll"}></div>
       <div className="Page">
         <div className="Bio">
+          <img src={wave} className="waves"></img>
           <div className="Panel">
             <p>My name is Simon Cox, I'm a student attending Fontys HBO ICT with a focus on Software Engineering</p>
             <p>Age: {GetAge()}</p>
@@ -31,9 +44,9 @@ function App() {
         <div className="Projects">
           <h2>Latest Projects</h2>
           <div className="Grid">
-            <ProjectCard name="Game Engine  " description="A game engine made using C++ and the Vulkan API. Implementing Lua as a scripting language."></ProjectCard>
-            <ProjectCard name="Canvas Assignment Board" description="School group project in collaboration with OpenMaze.io aiming to help students organize their assignments more efficiently."></ProjectCard>
-            <ProjectCard name="Note Taking App" description="Web app to easily write markdown files and save them on github."></ProjectCard>
+            <ProjectCard button={[{name: "test"},{name: "test"}]} name="Game Engine  " description="A game engine made using C++ and the Vulkan API. Implementing Lua as a scripting language."></ProjectCard>
+            <ProjectCard button={[{name: "test"},{name: "test"}]} name="Canvas Assignment Board" description="School group project in collaboration with OpenMaze.io aiming to help students organize their assignments more efficiently."></ProjectCard>
+            <ProjectCard button={[{name: "test"},{name: "test"}]} name="Note Taking App" description="Web app to easily write markdown files and save them on github."></ProjectCard>
           </div>
           <a href="" className="Archive">View Archive</a>
         </div>

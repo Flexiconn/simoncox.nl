@@ -4,7 +4,9 @@ function ProjectCard(props) {
         <h3>{props.name}</h3>
 
         <p>{props.description}</p>
-        <a className="Buttons">Source</a>
+        {props.button?.map(x => {
+            <a className="Buttons">{x.name}</a>
+        })}
     </div> );
 }
 
