@@ -1,12 +1,5 @@
 import logo from './img/Logo.svg';
 import './App.css';
-import ReactTypingEffect from 'react-typing-effect';
-import {SocialMediaIconsReact} from 'social-media-icons-react';
-import { CopyBlock, dracula } from "react-code-blocks";
-import DevIcon from "devicon-react-svg";
-import Images from "./img/testimg.jpg"
-import { NL, GB } from 'country-flag-icons/react/3x2'
-import BioImage from "./img/BioImage.png"
 import { Bar, CartesianGrid,XAxis, YAxis, BarChart, Legend, Tooltip } from 'recharts';
 import ProjectCard from './ProjectCard';
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
