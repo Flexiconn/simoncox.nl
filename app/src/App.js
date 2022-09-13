@@ -58,7 +58,6 @@ function App() {
         <div className="Contact">
           <h1>Get in touch</h1>
           <p>Feel free to reach out preferably through email</p>
-          <div className="Email" onClick={() => {navigator.clipboard.writeText("simon.cox@student.fontys.nl")}}>simon.cox@student.fontys.nl<FaRegClipboard/></div>
           <div className="Card"><FaLinkedinIn style={{ fontSize: '20px'}}/><span>LinkedIn</span></div>
           <div className="Card"><FaGithub style={{ fontSize: '20px'}}/><span>Github</span></div>
         </div>
