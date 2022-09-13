@@ -39,7 +39,11 @@ function App() {
           <div className="Panel">
             <p>My name is Simon Cox, {GetAge()} years old and I'm a student attending Fontys HBO ICT with a focus on Software Engineering</p>
             <h3>Skills</h3>
-            html css javascript c# react asp.net next.js docker git github
+            <div className='SkillList'>
+              <span className="Pill">HTML</span> <span className="Pill">CSS</span> <span className="Pill">SQL</span> <span className="Pill">NoSQL</span> <span className="Pill">Javascript</span> <span className="Pill">C#</span> <span className="Pill">ReactJS</span> <span className="Pill">ASP.NET</span> <span className="Pill">Next.js</span> <span className="Pill">Docker</span> <span className="Pill">Git</span> <span className="Pill">Github</span> <span className="Pill">Dutch</span> <span className="Pill">English</span>
+            </div>
+            
+            <a href="https://drive.google.com/file/d/1N__pbLNM2W53XXq84gmC6P96WWbCmOTi/view?usp=sharing" className="Button">View Resume</a>
           </div>      
         </div>
         <div className="Projects">
