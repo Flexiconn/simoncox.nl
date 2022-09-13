@@ -4,8 +4,8 @@ function ProjectCard(props) {
         <h3>{props.name}</h3>
 
         <p>{props.description}</p>
-        {props.button?.map(x => {
-            <a className="Buttons">{x.name}</a>
+        {props.buttons?.map((x) => {
+            return <a className="Buttons">{x.name}</a>
         })}
     </div> );
 }
