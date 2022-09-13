@@ -60,7 +60,7 @@
         border-radius: 10px;
         padding: 20px;
         height: fit-content;
-        width: 90%;
+        max-width: 100%;
         position: relative;
 
     }
@@ -169,7 +169,7 @@
 .Contact > .Card {
     border-radius: 10px;
     padding: 15px;
-    width: 10%;
+    width: fit-content;
     background-color: #F4F4F4;
     display: flex;
     justify-content: flex-start;

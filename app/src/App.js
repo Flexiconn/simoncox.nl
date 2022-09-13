@@ -37,7 +37,7 @@ function App() {
         <div className="Bio">
           <img src={wave} className="waves"></img>
           <div className="Panel">
-            <p>My name is Simon Cox, {GetAge()} years old and I'm a student attending Fontys HBO ICT with a focus on Software Engineering</p>
+            <p>My name is Simon Cox, {GetAge()} years old and I'm a student attending Fontys HBO ICT with a focus on Software Engineering.</p>
             <h3>Skills</h3>
             <div className='SkillList'>
               <span className="Pill">HTML</span> <span className="Pill">CSS</span> <span className="Pill">SQL</span> <span className="Pill">NoSQL</span> <span className="Pill">Javascript</span> <span className="Pill">C#</span> <span className="Pill">ReactJS</span> <span className="Pill">ASP.NET</span> <span className="Pill">Next.js</span> <span className="Pill">Docker</span> <span className="Pill">Git</span> <span className="Pill">Github</span> <span className="Pill">Dutch</span> <span className="Pill">English</span>
@@ -49,9 +49,9 @@ function App() {
         <div className="Projects">
           <h2>Latest Projects</h2>
           <div className="Grid">
-            <ProjectCard buttons={[{name: "test"},{name: "test"}]} name="Game Engine  " description="A game engine made using C++ and the Vulkan API. Implementing Lua as a scripting language."></ProjectCard>
-            <ProjectCard name="Canvas Assignment Board" description="School group project in collaboration with OpenMaze.io aiming to help students organize their assignments more efficiently."></ProjectCard>
-            <ProjectCard buttons={[{name: "test"},{name: "test"}]} name="Note Taking App" description="Web app to easily write markdown files and save them on github."></ProjectCard>
+            <ProjectCard buttons={[{name: "Demo", link:"https://www.simoncox.nl/"}, {name: "Source",link:"https://www.simoncox.nl/"}]} name="Game Engine  " description="A game engine made using C++ and the Vulkan API. Implementing Lua as a scripting language."></ProjectCard>
+            <ProjectCard buttons={[{name: "Demo" ,link:"https://www.simoncox.nl/"}, {name: "Source" ,link:"https://www.simoncox.nl/"}]} name="Canvas Assignment Board" description="School group project in collaboration with OpenMaze.io aiming to help students organize their assignments more efficiently."></ProjectCard>
+            <ProjectCard buttons={[{name: "Demo" ,link:"https://www.simoncox.nl/"},{name: "Front-end source" ,link:"https://www.simoncox.nl/"}, {name: "Back-end source" ,link:"https://www.simoncox.nl/"}]} name="Note Taking App" description="Web app to easily write markdown files and save them on github."></ProjectCard>
           </div>
           <a href="" className="Archive">View Archive</a>
         </div>
