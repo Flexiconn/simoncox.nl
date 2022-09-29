@@ -32,7 +32,11 @@ function Home() {
   
   return (
     <div className="App">
-      <div className={(offset > 20) ? "Nav" : "Nav-NonScroll"}></div>
+      <div className={(offset > 20) ? "Nav" : "Nav-NonScroll"}>
+      <p className={"Nav-Text"}>Simon Cox</p>
+      <button>Get in touch</button>
+
+      </div>
       <div className="Page">
         <div className="Bio">
           <img src={wave} className="waves"></img>
@@ -53,11 +57,12 @@ function Home() {
             <ProjectCard buttons={[{name: "Demo" ,link:"https://www.simoncox.nl/"}, {name: "Source" ,link:"https://www.simoncox.nl/"}]} name="Canvas Assignment Board" description="School group project in collaboration with OpenMaze.io aiming to help students organize their assignments more efficiently."></ProjectCard>
             <ProjectCard buttons={[{name: "Demo" ,link:"https://www.simoncox.nl/"},{name: "Front-end source" ,link:"https://www.simoncox.nl/"}, {name: "Back-end source" ,link:"https://www.simoncox.nl/"}]} name="Note Taking App" description="Web app to easily write markdown files and save them on github."></ProjectCard>
           </div>
-          <a href="" className="Archive">View Archive</a>
+          <a href="/archive" className="Archive">View Archive</a>
         </div>
         <div className="Contact">
           <h1>Get in touch</h1>
           <p>Feel free to reach out preferably through email</p>
+          <div>simoncox2003@gmail.com</div>
           <div className="Card"><FaLinkedinIn style={{ fontSize: '20px'}}/><span>LinkedIn</span></div>
           <div className="Card"><FaGithub style={{ fontSize: '20px'}}/><span>Github</span></div>
         </div>

@@ -34,7 +34,7 @@
     text-align: center;
 }
 
-.Projects{
+.Archive-Projects{
     grid-gap: 40px;
     display: grid;
     gap: 40px;
@@ -44,6 +44,6 @@
     padding: 80px 160px;
 }
 
-.Projects > p{
+.Archive-Projects > p{
     background-color: #fff;
 }
